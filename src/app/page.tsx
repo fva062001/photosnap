@@ -3,6 +3,7 @@ import SubHero from '@/components/pages/Landing/SubHero';
 import HeroPhoto1 from '/public/assets/new-photos/photographer.jpg';
 import HeroPhoto2 from '/public/assets/new-photos/pc-on-desktop.jpg';
 import SubHero2 from '@/components/pages/Landing/SubHero2';
+import FeaturedStories from '@/components/pages/Landing/FeaturedStories';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           'Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.'
         }
       />
+      <FeaturedStories />
     </>
   );
 }
