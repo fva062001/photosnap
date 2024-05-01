@@ -17,25 +17,24 @@ function Navbar() {
   return (
     <>
       <div
-        className="w-full flex flex-row justify-between max-w-[1500px] mx-auto align-items-center p-8 md-p-4 relative z-10"
+        className="w-full flex flex-row justify-between max-w-[1500px] mx-auto align-items-center p-6 md:p-4 relative z-10"
         style={{ fontFamily: 'DM Sans Variable, sans-serif' }}>
         <LogoIcon className="my-auto" />
 
-        {/* Desktop links */}
         <div className="hidden md:flex flex-row space-x-8 font-semibold text-md tracking-[2px]">
           <Link
             href="/stories"
-            className="hover:text-black/30">
+            className="hover:text-black/30 my-auto">
             STORIES
           </Link>
           <Link
             href="/features"
-            className="hover:text-black/30">
+            className="hover:text-black/30 my-auto">
             FEATURES
           </Link>
           <Link
             href="/pricing"
-            className="hover:text-black/30">
+            className="hover:text-black/30 my-auto">
             PRICING
           </Link>
         </div>
