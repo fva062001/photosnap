@@ -4,6 +4,7 @@ import HeroPhoto1 from '/public/assets/new-photos/photographer.jpg';
 import HeroPhoto2 from '/public/assets/new-photos/pc-on-desktop.jpg';
 import SubHero2 from '@/components/pages/Landing/SubHero2';
 import FeaturedStories from '@/components/pages/Landing/FeaturedStories';
+import Features from '@/components/pages/Landing/Features';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         }
       />
       <FeaturedStories />
+      <Features />
     </>
   );
 }
