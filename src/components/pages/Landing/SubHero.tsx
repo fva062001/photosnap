@@ -25,7 +25,7 @@ function SubHero({ mainImage, title, description }: SubHeroProps) {
         />
       </div>
       <div className="md:w-[60%] xl:w-[40%] md:relative md:flex order-2 my-auto">
-        <div className="relative p-10 md:py-0 md:px-16 xl:px-40">
+        <div className="relative max-w-[400px] mx-auto ">
           <h1 className="text-black text-[30px] md:text-[40px] font-bold tracking-[4.17px] leading-[48px]">
             {title}
           </h1>
