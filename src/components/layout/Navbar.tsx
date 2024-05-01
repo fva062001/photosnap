@@ -1,9 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import LogoIcon from '../../public/icons/LogoIcon';
+import LogoIcon from '../../../public/icons/LogoIcon';
 import Link from 'next/link';
-import BurgerIcon from '../../public/icons/BurgerIcon';
-import XMarkIcon from '../../public/icons/XMarkIcon';
+import BurgerIcon from '../../../public/icons/BurgerIcon';
+import XMarkIcon from '../../../public/icons/XMarkIcon';
+import { motion } from 'framer-motion';
 
 function Navbar() {
   // State to track if the mobile menu is open or closed
@@ -15,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <>
+    <div className="relative">
       <div
         className="w-full flex flex-row justify-between max-w-[1500px] mx-auto align-items-center p-6 md:p-4 relative z-10"
         style={{ fontFamily: 'DM Sans Variable, sans-serif' }}>
@@ -39,7 +40,6 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* Burger Icon for mobile */}
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
@@ -52,39 +52,46 @@ function Navbar() {
           </button>
         </div>
 
-        {/* Desktop "Get an Invite" button */}
         <button className="hidden md:flex bg-black text-white font-semibold px-6 py-3 tracking-[2px] hover:bg-gray-300">
           GET AN INVITE
         </button>
-
-        {/* Mobile Menu */}
       </div>
       {isMenuOpen && (
-        <div className="flex flex-col text-center font-semibold text-md tracking-[2px] px-8 w-full space-y-6 pt-4 pb-6 bottom-100 md:hidden bg-white">
-          <Link
-            href="/stories"
-            onClick={toggleMenu}>
-            STORIES
-          </Link>
-          <Link
-            href="/features"
-            onClick={toggleMenu}>
-            FEATURES
-          </Link>
-          <Link
-            href="/pricing"
-            onClick={toggleMenu}>
-            PRICING
-          </Link>
-          <div className="h-[1px] bg-black/25"></div>
-          <button
-            className="bg-black text-white font-semibold px-6 py-3 tracking-[2px] hover:bg-gray-300"
-            onClick={toggleMenu}>
-            GET AN INVITE
-          </button>
+        <div className="absolute -mt-2  z-20 w-full">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ type: 'spring' }}
+            className="flex flex-col text-center font-semibold text-md tracking-[2px] px-8 space-y-6 pt-4 pb-6 md:hidden bg-white">
+            <Link
+              href="/stories"
+              onClick={toggleMenu}>
+              STORIES
+            </Link>
+            <Link
+              href="/features"
+              onClick={toggleMenu}>
+              FEATURES
+            </Link>
+            <Link
+              href="/pricing"
+              onClick={toggleMenu}>
+              PRICING
+            </Link>
+            <div className="h-[1px] bg-black/25"></div>
+            <button
+              className="bg-black text-white font-semibold px-6 py-3 tracking-[2px] hover:bg-gray-300"
+              onClick={toggleMenu}>
+              GET AN INVITE
+            </button>
+          </motion.div>
+          <div
+            onClick={toggleMenu}
+            className="h-screen bg-black/50 "></div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

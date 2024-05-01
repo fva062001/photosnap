@@ -37,7 +37,7 @@ function SubHero2({ mainImage, title, description }: SubHeroProps) {
           <button
             className=" text-black tracking-[2px] flex font-semibold"
             style={{ fontFamily: 'DM Sans, sans-serif' }}>
-            GET AN INVITE
+            VIEW THE STORIES
             <ArrowIcon
               color="black"
               className="ml-10 my-auto"
