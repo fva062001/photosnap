@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoIconWhite from '../../../public/icons/LogoIcon';
+import LogoIconWhite from '../../../public/icons/LogoIconWhite';
 import Link from 'next/link';
 import PinterestIcon from '../../../public/icons/PinterestIcon';
 import InstagramIcon from '../../../public/icons/InstagramIcon';

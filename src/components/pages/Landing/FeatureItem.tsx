@@ -8,7 +8,7 @@ type FeatureItemProps = {
 
 function FeatureItem({ title, description, svg }: FeatureItemProps) {
   return (
-    <div className="min-w-[400px] flex flex-col">
+    <div className=" flex flex-col">
       <div className="mx-auto my-auto">{svg}</div>
       <div
         className="mt-12 text-center space-y-6"
