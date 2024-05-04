@@ -24,7 +24,7 @@ function SubHero({ mainImage, title, description }: SubHeroProps) {
           alt="Beautiful Stories"
         />
       </div>
-      <div className="md:w-[60%] xl:w-[40%] md:relative md:flex order-2 my-auto">
+      <div className="md:w-[60%] xl:w-[40%] md:relative md:flex order-2 my-auto p-10 md:p-0">
         <div className="relative max-w-[400px] mx-auto ">
           <h1 className="text-black text-[30px] md:text-[40px] font-bold tracking-[4.17px] leading-[48px]">
             {title}
@@ -35,7 +35,7 @@ function SubHero({ mainImage, title, description }: SubHeroProps) {
             {description}
           </p>
           <button
-            className=" text-black tracking-[2px] font-medium flex font-semibold"
+            className=" text-black tracking-[2px] font-medium flex font-semibold hover:underline hover:decoration-solid decoration-black"
             style={{ fontFamily: 'DM Sans, sans-serif' }}>
             VIEW THE STORIES
             <ArrowIcon

@@ -17,7 +17,7 @@ function Footer() {
         <div className="flex flex-row space-x-28 mx-auto mb-12 md:mb-0">
           <div className="flex flex-col justify-between space-y-8 lg:space-y-0">
             <LogoIconWhite className="order-1" />
-            <ul className="lg:hidden text-start text-white tracking-[2px] space-y-5 font-semibold text-sm order-3">
+            <ul className="lg:hidden md:text-start text-white tracking-[2px] space-y-5 font-semibold text-sm order-3">
               <li className="hover:text-white/30">
                 <Link href="/">
                   <p>HOME</p>
@@ -71,7 +71,7 @@ function Footer() {
           </ul>
         </div>
         <div className="flex flex-col justify-between mx-auto">
-          <div className="mx-auto lg:mx-0 text-white font-semibold hover:decoration-solid hover:decoration-white flex flex-row">
+          <div className="mx-auto lg:mx-0 text-white font-semibold hover:underline hover:decoration-solid hover:decoration-white flex flex-row">
             <p className="tracking-[2px]">GET AN INVITE</p>
             <ArrowIcon className="ms-6 my-auto" />
           </div>
