@@ -4,10 +4,9 @@ type Props = {
   className?: string;
 };
 
-function LogoIcon({ className }: Props) {
+function LogoIconWhite({ className }: Props) {
   return (
     <svg
-      className={className}
       width="170"
       height="16"
       viewBox="0 0 170 16"
@@ -48,4 +47,4 @@ function LogoIcon({ className }: Props) {
   );
 }
 
-export default LogoIcon;
+export default LogoIconWhite;
