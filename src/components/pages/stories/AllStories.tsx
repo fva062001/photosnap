@@ -8,7 +8,7 @@ import LionImage from '/public/assets/new-photos/lion.jpg';
 import AlpsImage from '/public/assets/new-photos/swiss-alps.jpg';
 import AfricaImage from '/public/assets/new-photos/africa.jpg';
 import BigTreeImage from '/public/assets/new-photos/big-tyree.jpg';
-import OceanImage from '/public/assets/new-photos/ocean.jpg';
+import OceanImage from '/public/assets/new-photos/Ocean.jpg';
 import WhaleImage from '/public/assets/new-photos/Whales.jpg';
 import BeachSunsetImage from '/public/assets/new-photos/BeachSunset.jpg';
 import HorsesImage from '/public/assets/new-photos/horses.jpg';
