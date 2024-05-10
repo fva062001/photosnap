@@ -20,7 +20,11 @@ function Navbar() {
       <div
         className="w-full flex flex-row justify-between max-w-[1500px] mx-auto align-items-center p-6 md:p-4 relative z-10"
         style={{ fontFamily: 'DM Sans Variable, sans-serif' }}>
-        <LogoIcon className="my-auto" />
+        <Link
+          href={'/'}
+          className="my-auto">
+          <LogoIcon />
+        </Link>
 
         <div className="hidden md:flex flex-row space-x-8 font-semibold text-md tracking-[2px]">
           <Link
