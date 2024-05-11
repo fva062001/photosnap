@@ -41,7 +41,7 @@ function BetaBanner() {
               'linear-gradient(to right, #FFC593 0%, #BC7198 52%, #5A77FF 100%)',
             borderImageSlice: 1,
           }}
-        />{' '}
+        />
         <div className="max-w-[1500px] mx-4 flex flex-col md:flex-row justify-between my-auto xl:mx-auto w-full ">
           <h1 className="text-5xl tracking-[4.17px] leading-[48px] text-white font-bold">
             WE’RE IN BETA. <br /> GET YOUR INVITE <br />

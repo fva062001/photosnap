@@ -43,7 +43,7 @@ const features = [
 function AllFeatures() {
   return (
     <div className="bg-white min-h-[475px] flex justify-center">
-      <div className="my-auto flex flex-col xl:flex-row space-y-14 py-28 gap-16 xl:space-y-0 flex-wrap justify-center max-w-[1500px]">
+      <div className="my-auto flex flex-col xl:flex-row space-y-14 py-28 px-10 gap-16 xl:space-y-0 flex-wrap justify-center max-w-[1500px]">
         {features.map((feature, index) => (
           <FeatureItem
             key={index}
