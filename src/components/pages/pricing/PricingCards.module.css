@@ -1,0 +1,10 @@
+.pricing_cards {
+  border-image: 'linear-gradient(to right, #FFC593 0%, #BC7198 52%, #5A77FF 100%)';
+  border-image-slice: 1;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pricing_cards {
+    border-image: 'linear-gradient(to bottom, #FFC593 0%, #BC7198 52%, #5A77FF 100%)';
+  }
+}

@@ -5,7 +5,7 @@ function BetaBanner() {
   return (
     <>
       <div
-        className="min-h-[400px] border-l-[6px] hidden md:flex "
+        className='hidden min-h-[400px] border-l-[6px] md:flex '
         style={{
           fontFamily: 'DM Sans, sans-serif',
           borderImage:
@@ -13,45 +13,49 @@ function BetaBanner() {
           borderImageSlice: 1,
           background:
             'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/new-photos/dunes.jpg) no-repeat center center/cover',
-        }}>
-        <div className="max-w-[1500px] mx-4 flex flex-col md:flex-row justify-between my-auto xl:mx-auto w-full ">
-          <h1 className="text-5xl tracking-[4.17px] leading-[48px] text-white font-bold">
+        }}
+      >
+        <div className='mx-4 my-auto flex w-full max-w-[1500px] flex-col justify-between md:flex-row xl:mx-auto '>
+          <h1 className='text-5xl font-bold leading-[48px] tracking-[4.17px] text-white'>
             WE’RE IN BETA. <br /> GET YOUR INVITE <br />
             TODAY!
           </h1>
           <button
-            className=" text-white tracking-[2px]  flex font-semibold my-12 md:my-0"
-            style={{ fontFamily: 'DM Sans, sans-serif' }}>
-            <p className="my-auto"> GET AN INVITE</p>
-            <ArrowIcon className="ml-10 my-auto" />
+            className=' my-12 flex  font-semibold tracking-[2px] text-white md:my-0'
+            style={{ fontFamily: 'DM Sans, sans-serif' }}
+          >
+            <p className='my-auto'> GET AN INVITE</p>
+            <ArrowIcon className='my-auto ml-10' />
           </button>
         </div>
       </div>
       <div
-        className=" relative md:hidden min-h-[400px] flex "
+        className=' relative flex min-h-[400px] md:hidden '
         style={{
           fontFamily: 'DM Sans, sans-serif',
           background:
             'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/new-photos/dunes.jpg) no-repeat center center/cover',
-        }}>
+        }}
+      >
         <div
-          className="mx-4 absolute w-4/12 md:hidden  inset-0 border-t-[6px]"
+          className='absolute inset-0 mx-4 w-4/12  border-t-[6px] md:hidden'
           style={{
             borderImage:
               'linear-gradient(to right, #FFC593 0%, #BC7198 52%, #5A77FF 100%)',
             borderImageSlice: 1,
           }}
         />
-        <div className="max-w-[1500px] mx-4 flex flex-col md:flex-row justify-between my-auto xl:mx-auto w-full ">
-          <h1 className="text-5xl tracking-[4.17px] leading-[48px] text-white font-bold">
+        <div className='mx-6 my-auto flex w-full max-w-[1500px] flex-col justify-between md:flex-row xl:mx-auto '>
+          <h1 className='mt-12 text-5xl font-bold leading-[48px] tracking-[4.17px] text-white'>
             WE’RE IN BETA. <br /> GET YOUR INVITE <br />
             TODAY!
           </h1>
           <button
-            className=" text-white tracking-[2px]  flex font-semibold my-12 md:my-0"
-            style={{ fontFamily: 'DM Sans, sans-serif' }}>
-            <p className="my-auto"> GET AN INVITE</p>
-            <ArrowIcon className="ml-10 my-auto" />
+            className=' my-12 flex  font-semibold tracking-[2px] text-white md:my-0'
+            style={{ fontFamily: 'DM Sans, sans-serif' }}
+          >
+            <p className='my-auto'> GET AN INVITE</p>
+            <ArrowIcon className='my-auto ml-10' />
           </button>
         </div>
       </div>
